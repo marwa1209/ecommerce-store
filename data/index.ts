@@ -6,3 +6,8 @@ export { getBillboard } from "@/data/queries/billboards";
 
 export { getProducts } from "@/data/queries/products";
 export { getProduct } from "@/data/queries/products";
+
+
+export { getColors } from "@/data/queries/colors";
+
+export { getSizes } from "@/data/queries/sizes";
