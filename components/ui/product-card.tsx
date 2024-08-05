@@ -11,12 +11,14 @@ import Currency from "@/components/ui/currency";
 import IconButton from "@/components/ui/icon-button";
 import usePreviewModal from "@/hooks/use-preview-modal";
 import { Product } from "@/types";
+import useCart from "@/hooks/use-cart";
 
 interface ProductCard {
   data: Product;
 }
 
 const ProductCard: React.FC<ProductCard> = ({ data }) => {
+  const cart = useCart()
   const previewModal = usePreviewModal();
   const router = useRouter();
 
@@ -32,6 +34,8 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
 
   const onAddToCart: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.stopPropagation();
+    cart.addItem(data);
+
   };
 
   return (
