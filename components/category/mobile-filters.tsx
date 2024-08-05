@@ -36,7 +36,6 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({
 
       <Dialog open={open} as="div" className="relative z-40 lg:hidden" onClose={onClose}>
         
-        {/* Background color and opacity */}
         <div className="fixed inset-0 bg-black bg-opacity-25" />
         
         {/* Dialog position */}
