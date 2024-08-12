@@ -13,7 +13,7 @@ interface FilterProps {
   valueKey: string;
 };
 
-const Filter: React.FC<FilterProps> = ({
+export const Filter: React.FC<FilterProps> = ({
   data,
   name,
   valueKey,
@@ -67,4 +67,3 @@ const Filter: React.FC<FilterProps> = ({
   );
 };
 
-export default Filter;

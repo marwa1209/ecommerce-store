@@ -8,14 +8,14 @@ import IconButton  from "@/components/ui/icon-button";
 import Button from "@/components/ui/button";
 import { Color, Size } from "@/types";
 
-import Filter from "@/components/category/filter";
+import{ Filter} from "@/components/category/filter";
 
 interface MobileFiltersProps {
   sizes: Size[],
   colors: Color[],
 }
 
-const MobileFilters: React.FC<MobileFiltersProps> = ({
+export const MobileFilters: React.FC<MobileFiltersProps> = ({
   sizes,
   colors
 }) => {
@@ -66,4 +66,3 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({
   );
 };
 
-export default MobileFilters;

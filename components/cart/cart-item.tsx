@@ -12,7 +12,7 @@ interface CartItemProps {
   data: Product;
 }
 
-const CartItem: React.FC<CartItemProps> = ({
+export const CartItem: React.FC<CartItemProps> = ({
   data
 }) => {
   const cart = useCart();
@@ -53,4 +53,3 @@ const CartItem: React.FC<CartItemProps> = ({
   );
 }
  
-export default CartItem;
