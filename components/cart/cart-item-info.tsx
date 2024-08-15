@@ -2,7 +2,7 @@ interface CartItemInfoProps {
   product: Record<string, any>;
 }
 
-const CartItemInfo: React.FC<CartItemInfoProps> = ({
+export const CartItemInfo: React.FC<CartItemInfoProps> = ({
   product
 }) => {
   return ( 
@@ -22,4 +22,3 @@ const CartItemInfo: React.FC<CartItemInfoProps> = ({
   );
 }
  
-export default CartItemInfo;

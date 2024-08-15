@@ -11,7 +11,7 @@ interface InfoProps {
   data: Product
 };
 
-const Info: React.FC<InfoProps> = ({ data }) => {
+export const Info: React.FC<InfoProps> = ({ data }) => {
     const cart = useCart();
 
     const onAddToCart: MouseEventHandler<HTMLButtonElement> = (event) => {
@@ -50,4 +50,3 @@ const Info: React.FC<InfoProps> = ({ data }) => {
   );
 }
  
-export default Info;

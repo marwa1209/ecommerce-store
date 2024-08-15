@@ -9,7 +9,7 @@ import Currency from "@/components/ui/currency";
 import useCart from "@/hooks/use-cart";
 import { toast } from "react-hot-toast";
 
-const Summary = () => {
+export const Summary = () => {
   const searchParams = useSearchParams();
   const items = useCart((state) => state.items);
   const removeAll = useCart((state) => state.removeAll);
@@ -57,4 +57,3 @@ const Summary = () => {
   );
 }
  
-export default Summary;

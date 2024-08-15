@@ -1,12 +1,12 @@
 "use client";
 
 import usePreviewModal from "@/hooks/use-preview-modal";
-import Gallery from "@/components/gallery";
-import Info from "@/components/info";
+import {Gallery} from "@/components/gallery";
+import {Info} from "@/components/info";
 import Modal from "@/components/ui/modal";
 
 
-const PreviewModal = () => {
+export const PreviewModal = () => {
   const previewModal = usePreviewModal();
   const product = usePreviewModal((state) => state.data);
 
@@ -31,4 +31,3 @@ const PreviewModal = () => {
   );
 }
  
-export default PreviewModal;

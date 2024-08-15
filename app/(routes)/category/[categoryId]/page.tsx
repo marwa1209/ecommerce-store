@@ -5,8 +5,8 @@ import ProductCard from "@/components/ui/product-card";
 
 import { getCategory, getColors, getProducts, getSizes } from "@/data";
 
-import Filter from "@/components/category/filter";
-import MobileFilters from "@/components/category/mobile-filters";
+import {Filter} from "@/components/category/filter";
+import {MobileFilters} from "@/components/category/mobile-filters";
 
 export const revalidate = 0;
 

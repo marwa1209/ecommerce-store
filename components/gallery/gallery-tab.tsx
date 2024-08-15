@@ -8,7 +8,7 @@ interface GalleryTabProps {
   image: Image;
 }
 
-const GalleryTab: React.FC<GalleryTabProps> = ({
+export const GalleryTab: React.FC<GalleryTabProps> = ({
   image
 }) => {
   return ( 
@@ -37,4 +37,3 @@ const GalleryTab: React.FC<GalleryTabProps> = ({
   );
 }
  
-export default GalleryTab;

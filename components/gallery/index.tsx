@@ -7,13 +7,13 @@ import { Tab } from "@headlessui/react";
 
 import { Image } from "@/types";
 
-import GalleryTab from "@/components/gallery/gallery-tab";
+import {GalleryTab} from "@/components/gallery/gallery-tab";
 
 interface GalleryProps {
   images: Image[];
 }
 
-const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
+export const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
   return (
     <div className="container">
       <Tab.Group as="div" className="flex flex-col-reverse">
@@ -43,4 +43,3 @@ const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
   );
 };
 
-export default Gallery;
